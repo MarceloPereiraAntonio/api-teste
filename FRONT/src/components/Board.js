@@ -65,7 +65,7 @@ const Board = () => {
                 }
             </Lista>
             <Lista titulo={"To Do"}>
-                {
+                { {
                     cards.filter(c => c.lista === 'ToDo').map(c =>
                         <Card
                             key={c.id}
@@ -76,10 +76,10 @@ const Board = () => {
                             remove={removeCardHandler(c.id)}
                         />
                     )
-                }
+                } }
             </Lista>
             <Lista titulo={"Doing"}>
-                {
+                { {
                     cards.filter(c => c.lista === 'Doing').map(c =>
                         <Card
                             key={c.id}
@@ -91,10 +91,10 @@ const Board = () => {
                             remove={removeCardHandler(c.id)}
                         />
                     )
-                }
+                } }
             </Lista>
             <Lista titulo={"Done"}>
-                {
+                { {
                     cards.filter(c => c.lista === 'Done').map(c =>
                         <Card
                             key={c.id}
@@ -105,7 +105,7 @@ const Board = () => {
                             remove={removeCardHandler(c.id)}
                         />
                     )
-                }
+                } }
             </Lista>
         </BoardContainer>
     )
